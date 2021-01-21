@@ -2,7 +2,7 @@
     <div id="footer" class="footer">
         <div class="others"> 
             <p class="content light tent">Stats for <strong>Spotify bot</strong></p>
-            <p class="socials"><i class="lab la-instagram"></i><i class="lab la-twitter"></i></p>
+            <p class="socials"><a href="https://www.instagram.com/decavacado/" target="_blank"><i class="lab la-instagram"></i></a><a href="https://twitter.com/decavacado" target="_blank"><i class="lab la-twitter"></i></a></p>
         </div>
     </div>
 </template>
@@ -19,10 +19,14 @@ export default {
 </script>
 
 <style scoped lang="less">
+a {
+   color: black; 
+}
 #footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
+    height: 300px;
 }
 
 .tent {

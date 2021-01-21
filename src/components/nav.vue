@@ -2,13 +2,21 @@
   <div class="Nav">
     <img class="log" src="../assets/spot.png">
     <p id="text_logo">STATS</p>
-    <button class="button use-code">Use Code</button>
+    <button class="button use-code" v-on:click="pop">Use Code</button>
   </div>
 </template>
 
 <script>
+import mix from "../mixins/methods.js"
+
 export default {
   name: 'navi',
+  data() {
+    return {
+
+    }
+  },
+  mixins: [mix],
 }
 </script>
 
@@ -31,7 +39,7 @@ export default {
 
   #text_logo {
     position: relative;
-    top: 25px;
+    top: 27px;
     font-size: 16px;
     font-family: "Roboto", sans-serif;
   }
